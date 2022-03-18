@@ -12,27 +12,29 @@
     <link rel="stylesheet" href="/dist/main.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="flex py-14">
-            <a class="block w-40 h-40 ring ring-indigo-900 rounded-full overflow-hidden mr-9" href="index.html"><img class="" src="/dist/img/headshot.jpg" /></a>
+    <div class="main-container px-8">
+        <header class="py-10 sm:py-14 sm:flex ">
+            <div>
+                <a class="block w-40 h-40 ring ring-indigo-900 rounded-full overflow-hidden mr-9" href="index.html"><img src="/dist/img/headshot.jpg" alt="Picture of Nayeon" /></a>
+            </div>
             <div>
                 <h1 class="text-5xl font-semibold mb-6 mt-5">Nayeon Kim</h1>
                 <!-- <div class="w-10 border"></div> -->
                 <div class="flex text-indigo-800">
-                    <a class="text-xl mr-4 -ml-3 hover:bg-indigo-50 px-4 py-2 rounded-lg" href="about.html">About</a>
-                    <a class="text-xl mr-4 hover:bg-indigo-50 px-4 py-2 rounded-lg" href="projects.html">Projects</a>
-                    <a class="text-xl mr-4 hover:bg-indigo-50 px-4 py-2 rounded-lg" href="contact.html">Contact</a>
-                    <a class="text-xl mr-4 hover:bg-indigo-50 px-4 py-2 rounded-lg" href="about.html">Resume</a>
+                    <a class="text-xl -ml-3 hover:bg-indigo-50 px-2 sm:px-4 sm:py-2 rounded-lg mr-1 sm:mr-4" href="about.html">About</a>
+                    <a class="text-xl hover:bg-indigo-50 px-2 sm:px-4 sm:py-2 rounded-lg mr-0 sm:mr-4" href="projects.html">Projects</a>
+                    <a class="text-xl hover:bg-indigo-50 px-2 sm:px-4 sm:py-2 rounded-lg mr-0 sm:mr-4" href="contact.html">Contact</a>
+                    <a class="text-xl hover:bg-indigo-50 px-2 sm:px-4 sm:py-2 rounded-lg mr-0 sm:mr-4" href="about.html">Resume</a>
                 </div>
             </div>
-        </div>
+        </header>
         
-        <div class="p-7 mb-16 bg-indigo-50 shadow-md text-lg">
-            <p class="text-4xl font-medium">👋 Hi! I'm Nayeon.</p>
+        <div class="p-6 sm:p-7 mb-16 bg-indigo-50 shadow-md text-lg">
+            <p class="text-3xl sm:text-4xl mb-2 font-medium">👋 Hi! I'm Nayeon.</p>
 
             <p class="mb-4">I currently work full time as a <strong>Senior Lecturer</strong> at the <a href="https://itp.usc.edu/" target="_blank"><span class="text-red-800">University of Southern California</span></a> teaching web development to students of all majors.</p>
 
-            <p>On the side, I also work a <strong>full-stack web developer</strong> dedicated to building beautiful, nearly pixel-perfect websites and web applications. I usually work on the LAMP stack, but lately have been tinkering with NodeJS and Angular</p>
+            <p>On the side, I also work a <strong>full-stack web developer</strong> dedicated to building beautiful, nearly pixel-perfect websites and web applications. I usually work on the LAMP stack, but lately have been tinkering with NodeJS and Angular.</p>
             
         </div>
 
@@ -40,9 +42,13 @@
             <h2 class="text-4xl font-medium">👩🏻‍🏫 Teaching</h2>
             <hr class="w-24 border-t-4 border-pink-500 mt-3 mb-6">
 
-            <p class="mb-4">I love teaching web development because every human being on earth interacts with the web. In my class, we are constantly coding together and making fun, relevant examples like this T-shirt customizer below (built with vanilla JS and CSS):</p>
+            <p class="mb-4">I love teaching web development because it is such a practical skill. In my class, we are always coding together and making fun, relevant examples like this T-shirt customizer below (built with vanilla JS and CSS):</p>
 
-            <img class="shadow-md" src="/dist/img/tshirt-sample.gif" alt="Animated gif of a tshirt customizer application"/>
+            <p class="mb-4">
+                <img class="shadow-md" src="/dist/img/tshirt-sample.gif" alt="Animated gif of a tshirt customizer application"/>
+            </p>
+
+            <p class="mb-4">You can check out my ITP 303: Full-stack Web Development class <a href="http://itpwebdev.com/fall-2021/itp-303-12pm/" target="_blank">website</a> to see in detail what I teach.</p>
         </div>
 
         <div class="text-xl mb-16">
@@ -51,50 +57,49 @@
 
             <p class="mb-4">To keep myself up to date in the latest technologies, I consult on and work on side projects whenever I have some time. Below are some recent projects I had a lot of fun with.</p>
 
-            <div class="flex mb-8">
-                <a href="projects/jennette.html" class="w-2/5 mr-5 transition-all hover:scale-110"><img class="shadow-md " src="/dist/img/jm.png" alt=""/></a>
-                <div class="mb-4">
+            <div class="sm:flex mb-6">
+                <div class="sm:w-2/5 mr-0 mb-3 sm:mr-5 transition-all hover:scale-110">
+                    <a href="projects/jennette.html" class="block"><img class="shadow-md " src="/dist/img/jm.png" alt="Screenshot of jennettemccurdy.com"/></a>
+                </div>
+                <div class="sm:w-3/5 mb-4">
                     <h3 class="text-2xl font-normal">jennettemccurdy.com</h3>
                     <p class="text-zinc-600">Official website of former iCarly actress Jennette McCurdy</p>
                     <div class="text-base">
                         <a class="hover:bg-indigo-50" href="projects/jennette.html">See details</a> | 
                         <a class="hover:bg-indigo-50" href="https://jennettemccurdy.com/" target="_blank">Live Website</a> |
-                        <a class="hover:bg-indigo-50" href="#">GitHub</a>
+                        <a class="hover:bg-indigo-50" href="https://github.com/nayeonk/jm-v2.5" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
 
-            <div class="flex mb-8">
-                <img class="w-2/5 shadow-md mr-5" src="/dist/img/aij.png" alt=""/>
-                <div class="mb-4">
+            <div class="sm:flex mb-6">
+                <div class="sm:w-2/5 mr-0 mb-3 sm:mr-5 transition-all hover:scale-110">
+                    <a href="projects/american-in-justice.html" class="block"><img class="shadow-md " src="/dist/img/aij.png" alt="American In Justice website screenshot."/></a>
+                </div>
+                <div class="sm:w-3/5 mb-4">
                     <h3 class="text-2xl font-normal">american-in-justice.com</h3>
-                    <p class="text-zinc-600">Official website of former iCarly actress Jennette McCurdy</p>
+                    <p class="text-zinc-600">Variety and Rolling Stone articles about American Injustice. A project for <a href="https://pmc.com/" target="_blank">PMC</a>.</p>
                     <div class="text-base">
-                        <a class="hover:bg-indigo-50" href="projects/jennette.html">See details</a> | 
-                        <a class="hover:bg-indigo-50" href="https://www.american-in-justice.com/" target="_blank">Live Website</a> |
-                        <a class="hover:bg-indigo-50" href="#">GitHub</a>
+                        <a class="hover:bg-indigo-50" href="projects/american-in-justice.html">See details</a> | 
+                        <a class="hover:bg-indigo-50" href="https://www.american-in-justice.com/" target="_blank">Live Website</a>
                     </div>
                 </div>
             </div>
 
-            <div class="flex mb-8">
-                <img class="w-2/5 shadow-md mr-5" src="/dist/img/stock-app.png" alt=""/>
-                <div class="mb-4">
+            <div class="sm:flex mb-6">
+                <div class="sm:w-2/5 mr-0 mb-3 sm:mr-5 transition-all hover:scale-110">
+                    <a href="projects/stock-app.html" class="block"><img class="shadow-md " src="/dist/img/stock-app.png" alt="Screenshot of stock search app"/></a>
+                </div>
+                <div class="sm:w-3/5 mb-4">
                     <h3 class="text-2xl font-normal">Stock Search App</h3>
-                    <p class="text-zinc-600">An angular application I developed for a grad class.</p>
+                    <p class="text-zinc-600">An Angular application I developed to learn angular and NodeJS.</p>
                     <div class="text-base">
                         <a class="hover:bg-indigo-50" href="projects/stock-app.html">See details</a> | 
-                        <a class="hover:bg-indigo-50" href="http://stockapp-env.eba-9neibune.us-east-1.elasticbeanstalk.com/" target="_blank">Live Website</a> |
-                        <a class="hover:bg-indigo-50" href="#">GitHub</a>
+                        <a class="hover:bg-indigo-50" href="http://stockapp-env.eba-9neibune.us-east-1.elasticbeanstalk.com/" target="_blank">Live Website</a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        <div class="footer border-t-2 border-slate-200">
-            &copy; 2022. Created with tailwindcss
-        </div>
     </div>
 </body>
 </html>
